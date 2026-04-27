@@ -274,7 +274,7 @@ export default function Home() {
             <span className="flex gap-2">
               {counts.pass ? <Pill className="bg-emerald-50 text-emerald-800 border-emerald-200">{counts.pass} OK</Pill> : null}
               {counts.warn ? <Pill className="bg-amber-50 text-amber-800 border-amber-200">{counts.warn} pozor</Pill> : null}
-              {counts.fail ? <Pill className="bg-red-50 text-red-800 border-red-200">{counts.fail} chýba</Pill> : null}
+              {counts.fail ? <Pill className="bg-red-50 text-red-800 border-red-200">{counts.fail} chyba</Pill> : null}
               {counts.info ? <Pill className="bg-stone-100 text-stone-700 border-stone-200">{counts.info} info</Pill> : null}
               {counts.skip ? <Pill className="bg-stone-100 text-stone-500 border-stone-200">{counts.skip} N/A</Pill> : null}
             </span>

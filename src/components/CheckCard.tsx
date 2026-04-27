@@ -23,7 +23,7 @@ const STATUS_META: Record<
     icon: "!",
   },
   fail: {
-    label: "Chýba",
+    label: "Chyba",
     bg: "bg-red-50",
     ring: "ring-red-200",
     chip: "bg-red-100 text-red-800 border-red-200",
