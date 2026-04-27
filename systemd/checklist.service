@@ -1,0 +1,19 @@
+[Unit]
+Description=Checklist Auditor (Next.js)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/checklist
+Environment=NODE_ENV=production
+Environment=PORT=3201
+EnvironmentFile=-/root/checklist/.env.local
+ExecStart=/usr/bin/npm run start
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
